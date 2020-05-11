@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+    <div id="app">
+      <header>
+        <h1>Todoolean</h1>
+      </header>
+
+      <main>
+        <input id="new-todo-input" type='text' name="" value="" placeholder="Inserisci nuovo todo">
+        <button id="new-todo-btn" >Inserisci</button>
+
+        <ul class="todos">
+
+
+        </ul>
+      </main>
+
+
+    </div>
+
+
+
+    <script id="todo-template" type="text/x-handlebars-template">
+      <li class="todo">
+        {{ todo }}
+        <span class="remove" data-id='{{ id }}'>X</span></li>
+    </script>
+
+
+    <!-- JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
